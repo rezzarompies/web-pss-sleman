@@ -58,18 +58,16 @@ $social_media = [
             <h1>PSS SLEMAN</h1>
             <p class="subtitle">Super Elang Jawa</p>
             <p class="motto">"Sampai Kau Bisa"</p>
-            <div class="hero-image-placeholder">
-                <p>🎯 [Letakkan gambar hero PSS Sleman di sini]</p>
-            </div>
+            <!-- PERBAIKAN 1: Gambar Hero -->
+            <img src="/images/hero-pss.jpg" alt="PSS Sleman" style="max-width: 80%; margin-top: 20px; border-radius: 12px; border: 2px solid var(--pss-yellow);">
         </div>
     </section>
 
     <section id="profil" class="profil">
         <h2>Profil PSS Sleman</h2>
         <div class="profil-content">
-            <div class="profil-image-placeholder">
-                <p>📸 [Letakkan gambar tim PSS Sleman di sini]</p>
-            </div>
+            <!-- PERBAIKAN 2: Gambar Tim -->
+            <img src="/images/tim-pss.jpg" alt="Tim PSS Sleman" style="width: 100%; border-radius: 12px; border: 2px solid var(--pss-green);">
             <div class="profil-text">
                 <p><strong>Perserikatan Sepakbola Sleman (PSS)</strong> didirikan pada <strong>20 Mei 1976</strong>.</p>
                 <p>Tim ini dikenal dengan julukan <strong>Super Elang Jawa</strong> dan memiliki suporter <strong>Sleman Fans</strong>.</p>
@@ -98,28 +96,29 @@ $social_media = [
     <section id="galeri" class="galeri">
         <h2>📸 Galeri PSS Sleman</h2>
         <div class="galeri-grid">
+            <!-- PERBAIKAN 3: Galeri Gambar -->
             <div class="galeri-item">
-                <div class="image-placeholder">[Gambar 1: Logo PSS Sleman]</div>
+                <img src="/images/logo-pss.jpg" alt="Logo PSS Sleman" style="width: 100%; height: 150px; object-fit: cover;">
                 <p>Logo PSS Sleman</p>
             </div>
             <div class="galeri-item">
-                <div class="image-placeholder">[Gambar 2: Stadion Maguwoharjo]</div>
+                <img src="/images/stadion.jpg" alt="Stadion Maguwoharjo" style="width: 100%; height: 150px; object-fit: cover;">
                 <p>Stadion Maguwoharjo</p>
             </div>
             <div class="galeri-item">
-                <div class="image-placeholder">[Gambar 3: Suporter Sleman Fans]</div>
+                <img src="/images/suporter.jpg" alt="Sleman Fans" style="width: 100%; height: 150px; object-fit: cover;">
                 <p>Sleman Fans</p>
             </div>
             <div class="galeri-item">
-                <div class="image-placeholder">[Gambar 4: Pemain PSS Sleman]</div>
+                <img src="/images/pemain.jpg" alt="Pemain PSS Sleman" style="width: 100%; height: 150px; object-fit: cover;">
                 <p>Tim PSS Sleman</p>
             </div>
             <div class="galeri-item">
-                <div class="image-placeholder">[Gambar 5: Momen Pertandingan]</div>
+                <img src="/images/pertandingan.jpg" alt="Aksi di Lapangan" style="width: 100%; height: 150px; object-fit: cover;">
                 <p>Aksi di Lapangan</p>
             </div>
             <div class="galeri-item">
-                <div class="image-placeholder">[Gambar 6: Perayaan Kemenangan]</div>
+                <img src="/images/perayaan.jpg" alt="Perayaan Kemenangan" style="width: 100%; height: 150px; object-fit: cover;">
                 <p>Perayaan Kemenangan</p>
             </div>
         </div>
