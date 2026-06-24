@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #0a0a0a;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+:root {
+    --pss-green: #1a7a3a;
+    --pss-yellow: #ffd700;
+}
+
+nav {
+    background: rgba(10, 10, 10, 0.95);
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid var(--pss-yellow);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--pss-yellow);
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-menu a:hover {
+    color: var(--pss-yellow);
+}
+
+section {
+    padding: 5rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--pss-yellow);
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #0d1f0d;
+    padding-top: 80px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    color: var(--pss-yellow);
+}
+
+.hero .subtitle {
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.hero .motto {
+    font-size: 1.5rem;
+    color: #aaa;
+    font-style: italic;
+}
+
+.hero-image-placeholder {
+    margin-top: 2rem;
+    padding: 2rem;
+    border: 2px dashed var(--pss-yellow);
+    border-radius: 10px;
+}
+
+.profil-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.profil-image-placeholder {
+    padding: 2rem;
+    border: 2px dashed var(--pss-green);
+    border-radius: 10px;
+    text-align: center;
+    min-height: 200px;
+}
+
+.profil-text p {
+    margin-bottom: 1rem;
+    color: #ddd;
+}
+
+.profil-text strong {
+    color: var(--pss-yellow);
+}
+
+.anthem {
+    background: #0d1f0d;
+}
+
+.audio-player {
+    text-align: center;
+    margin: 2rem 0;
+    padding: 2rem;
+    background: rgba(255, 215, 0, 0.05);
+    border-radius: 15px;
+}
+
+.audio-player audio {
+    width: 100%;
+    max-width: 500px;
+}
+
+.lyrics {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    border-left: 4px solid var(--pss-yellow);
+}
+
+.lyrics p {
+    margin: 0.2rem 0;
+    color: #eee;
+}
+
+.galeri-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.galeri-item {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.image-placeholder {
+    padding: 3rem 1rem;
+    text-align: center;
+    background: rgba(26, 122, 58, 0.15);
+    border-bottom: 2px solid var(--pss-green);
+    min-height: 150px;
+    color: #888;
+}
+
+.galeri-item p {
+    padding: 0.8rem;
+    text-align: center;
+    color: #ccc;
+}
+
+.sosial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sosial-card {
+    display: block;
+    padding: 1.5rem;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sosial-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--pss-yellow);
+}
+
+.sosial-card.youtube:hover { background: #ff0000; }
+.sosial-card.instagram:hover { background: #e4405f; }
+.sosial-card.facebook:hover { background: #1877f2; }
+.sosial-card.twitter:hover { background: #1da1f2; }
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: #0d1f0d;
+    border-top: 2px solid var(--pss-yellow);
+    color: #888;
+}
+
+footer p:last-child {
+    color: var(--pss-yellow);
+}
+
+@media (max-width: 768px) {
+    .profil-content {
+        grid-template-columns: 1fr;
+    }
+    .nav-menu {
+        gap: 1rem;
+        font-size: 0.9rem;
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
